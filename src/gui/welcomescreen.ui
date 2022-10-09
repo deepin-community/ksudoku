@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WelcomeScreen</class>
+ <widget class="QWidget" name="WelcomeScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>512</width>
+    <height>512</height>
+   </rect>
+  </property>
+  <layout class="QHBoxLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox1">
+     <property name="title">
+      <string>Choose your Game</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QListView" name="gameListWidget"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="QPushButton" name="getNewGameButton">
+          <property name="text">
+           <string>Get New</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="startEmptyButton">
+          <property name="text">
+           <string>Enter In A Puzzle</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="puzzleGeneratorButton">
+          <property name="text">
+           <string>Generate A Puzzle</string>
+          </property>
+          <property name="default">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

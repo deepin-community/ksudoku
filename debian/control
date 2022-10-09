@@ -1,0 +1,51 @@
+Source: ksudoku
+Section: games
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Daniel Schepler <schepler@debian.org>,
+           Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+           Sune Vuorela <sune@debian.org>,
+Build-Depends: cmake (>= 3.16~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.83.0~),
+               gettext,
+               libgl1-mesa-dev | libgl-dev,
+               libglu1-mesa-dev,
+               libkf5archive-dev (>= 5.83.0~),
+               libkf5config-dev (>= 5.83.0~),
+               libkf5configwidgets-dev (>= 5.83.0~),
+               libkf5coreaddons-dev (>= 5.83.0~),
+               libkf5crash-dev (>= 5.83.0~),
+               libkf5doctools-dev (>= 5.83.0~),
+               libkf5guiaddons-dev (>= 5.83.0~),
+               libkf5i18n-dev (>= 5.83.0~),
+               libkf5iconthemes-dev (>= 5.83.0~),
+               libkf5jobwidgets-dev (>= 5.83.0~),
+               libkf5kdegames-dev (>= 4:21.08.0~),
+               libkf5kio-dev (>= 5.83.0~),
+               libkf5widgetsaddons-dev (>= 5.83.0~),
+               libkf5xmlgui-dev (>= 5.83.0~),
+               libqt5opengl5-dev (>= 5.15.0~),
+               libqt5svg5-dev (>= 5.15.0~),
+               pkg-kde-tools (>= 0.14),
+               qtbase5-dev (>= 5.15.0~),
+               qtdeclarative5-dev (>= 5.15.0~),
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: http://games.kde.org/
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/ksudoku
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/ksudoku.git
+
+Package: ksudoku
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: ${kde-l10n:all}
+Replaces: ${kde-l10n:all}
+Recommends: khelpcenter
+Description: Sudoku puzzle game and solver
+ KSudoku is a Sudoku game and solver, supporting a range of 2D and 3D Sudoku
+ variants.  In addition to playing Sudoku, it can print Sudoku puzzle sheets
+ and find the solution to any Sudoku puzzle.
+ .
+ This package is part of the KDE games module.
