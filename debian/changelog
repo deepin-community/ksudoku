@@ -1,3 +1,9 @@
+ksudoku (4:21.08.0-1deepin1) unstable; urgency=medium
+
+  * fix: adapt KF5KDEGames to newer system version
+
+ -- sisungo <sisungo@icloud.com>  Sat, 8 Nov 2025 16:38:21 +0800
+
 ksudoku (4:21.08.0-1) unstable; urgency=medium
 
   [ Norbert Preining ]
